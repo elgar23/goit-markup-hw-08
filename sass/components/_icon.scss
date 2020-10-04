@@ -1,0 +1,22 @@
+.icon-mail {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(./svg/xx/sprite.svg#envelope);
+  background-size: contain;
+  fill: currentColor;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-tel {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(./svg/xx/sprite.svg#smartphone);
+  background-size: contain;
+  fill: currentColor;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,47 @@
+.links-header {
+  //display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+
+  color: $text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail__link {
+  padding-right: 30px;
+  padding-top: 32px;
+  //display: flex;
+  align-items: center;
+
+  color: $text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+.tel__link {
+  padding-top: 32px;
+  //display: flex;
+  align-items: center;
+
+  color: $text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}

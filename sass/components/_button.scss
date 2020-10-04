@@ -1,0 +1,74 @@
+button {
+  font-family: inherit;
+}
+
+.button__hero {
+  color: $main-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  border-radius: 4px;
+  border: none;
+  color: $main-color;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  margin-left: 124px;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.list-button {
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 50px;
+  //display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__item--button {
+    color: $title-color;
+    background-color: $background-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item--button:hover,
+  &__item--button:focus {
+    color: $main-color;
+    background-color: $accent-color;
+  }
+}
