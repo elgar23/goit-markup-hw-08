@@ -181,9 +181,10 @@
 
     <main>
       <!-- Герой -->
-      <section class="hero">
+
+      <section class="heromob">
         <div class="container">
-          <h1 class="hero__title">
+          <h1 class="heromob__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
@@ -193,8 +194,56 @@
         </div>
       </section>
 
+      <!--<section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="button__hero" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section>-->
+
       <!-- Особенности -->
-      <section class="features">
+
+      <section class="featuresmob">
+        <div class="container">
+          <ul class="skillmob flexbox">
+            <li class="skillmob__icon icon-antena">
+              <h3 class="skillmob__title-text">Внимание к деталям</h3>
+              <p class="skillmob__paragraf">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="skillmob__icon icon-clock">
+              <h3 class="skillmob__title-text">Пунктуальность</h3>
+              <p class="skillmob__paragraf">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="skillmob__icon icon-diagram">
+              <h3 class="skillmob__title-text">Планирование</h3>
+              <p class="skillmob__paragraf">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="skillmob__icon icon-astronavt">
+              <h3 class="skillmob__title-text">Современные технологии</h3>
+              <p class="skillmob__paragraf">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="features">
         <div class="container">
           <ul class="skill flexbox">
             <li class="skill__icon icon-antena">
@@ -227,7 +276,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!-- Чем мы занимаемся -->
       <section class="our-work">
@@ -257,12 +306,294 @@
       </section>
 
       <!-- Наша команда -->
-      <section class="our-team">
+
+      <section class="our-teammob">
+        <div class="container">
+          <h2 class="our-teammob__title">Наша команда</h2>
+          <ul class="our-teammob__list">
+            <li class="our-teammod__list--item">
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img1mob.jpg    1x,
+                    ./phototeam/img1mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img1tab.jpg    1x,
+                    ./phototeam/img1tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img1desk.jpg    1x,
+                    ./phototeam/img1desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img.jpg"
+                  alt="Фото Игорь Демьяненко"
+                />
+              </picture>
+              <h3 class="our-teammob__name">Игорь Демьяненко</h3>
+              <p>Product Designer</p>
+              <ul class="social">
+                <li class="social__list">
+                  <a class="social__link" href="https://www.instagram.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://twitter.com/home">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.facebook.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.linkedin.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-teammob__list--item">
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img2mob.jpg    1x,
+                    ./phototeam/img2mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img2tab.jpg    1x,
+                    ./phototeam/img2tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img2desk.jpg    1x,
+                    ./phototeam/img2desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img2.jpg"
+                  alt="Фото Ольга Репина"
+                />
+              </picture>
+              <h3 class="our-teammob__name">Ольга Репина</h3>
+              <p>Frontend Developer</p>
+              <ul class="social">
+                <li class="social__list">
+                  <a
+                    class="social__link flex"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://twitter.com/home">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.facebook.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.linkedin.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-teammob__list--item">
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img3mob.jpg    1x,
+                    ./phototeam/img3mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img3tab.jpg    1x,
+                    ./phototeam/img3tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img3desk.jpg    1x,
+                    ./phototeam/img3desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img3.jpg"
+                  alt="Фото Николай Тарасов"
+                />
+              </picture>
+              <h3 class="our-teammob__name">Николай Тарасов</h3>
+              <p>Marketing</p>
+              <ul class="social">
+                <li class="social__list">
+                  <a
+                    class="social__link flex"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://twitter.com/home">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.facebook.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.linkedin.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-teammob__list--item">
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img4mob.jpg    1x,
+                    ./phototeam/img4mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img4tab.jpg    1x,
+                    ./phototeam/img4tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img4desk.jpg    1x,
+                    ./phototeam/img4desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img4.jpg"
+                  alt="Фото Михаил Ермаков"
+                />
+              </picture>
+              <h3 class="our-teammob__name">Михаил Ермаков</h3>
+              <p>UI Designer</p>
+              <ul class="social">
+                <li class="social__list">
+                  <a
+                    class="social__link flex"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://twitter.com/home">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.facebook.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__list">
+                  <a class="social__link flex" href="https://www.linkedin.com/">
+                    <svg class="icon">
+                      <use href="./svg/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--ourteam desktop-->
+
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__list--item">
-              <img src="./img/foto1.png" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source srcset="
+                                  ./phototeam/img1mob.jpg    1x,
+                                  ./phototeam/img1mob@2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                <source srcset="
+                                  ./phototeam/img1tab.jpg    1x,
+                                  ./phototeam/img1tab@2x.jpg 2x
+                                " media="(min-width: 768px)" />
+                <source srcset="
+                                  ./phototeam/img1desk.jpg    1x,
+                                  ./phototeam/img1desk@2x.jpg 2x
+                                " media="(min-width: 480px)" />
+                <img class="member__photo" src="./phototeam/img1.jpg" alt="Фото Игорь Демьяненко" />
+              </picture>
               <h3 class="our-team__name">Игорь Демьяненко</h3>
               <p>Product Designer</p>
               <ul class="social">
@@ -412,10 +743,64 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
+      </section>-->
+    
         <!-- Постоянные клиенты -->
         <div class="container">
+          <h2 class="title-client">Постоянные клиенты</h2>
+          <ul class="clientmob">
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-one">
+                  <use xlink:href=".\svg\sprite.svg#logo1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-two">
+                  <use xlink:href="./svg/sprite.svg#logo2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-three">
+                  <use xlink:href="./svg/sprite.svg#logo3"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-four">
+                  <use xlink:href="./svg/sprite.svg#logo4"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-five">
+                  <use xlink:href="./svg/sprite.svg#logo5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clientmob__list">
+              <a class="clientmob__list--logo-link" href="">
+                <svg class="clientmob__list--logo-six">
+                  <use xlink:href="./svg/sprite.svg#logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--<div class="container">
           <h2 class="title-client">Постоянные клиенты</h2>
           <ul class="client">
             <li class="client__list">
@@ -467,7 +852,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
     <!-- Контакты -->
     <footer class="section-footer">

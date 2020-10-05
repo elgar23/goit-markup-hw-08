@@ -12,8 +12,7 @@
 }
 .mobilebtn {
   position: absolute;
-  //display: -webkit-inline-box;
-  //display: -ms-inline-flexbox;
+
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -21,13 +20,7 @@
   border: none;
   background-color: transparent;
   top: 0;
-  right: 0;
-  /*display: inline-flex;
-  margin: 0;
-  bottom: 0;
-  border: none;
-  background-color: #fff;
-  right: 8px;*/
+  right: 20px;
 
   @media screen and (min-width: 768px) {
     display: none;

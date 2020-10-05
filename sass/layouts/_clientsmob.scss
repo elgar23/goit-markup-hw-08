@@ -1,0 +1,107 @@
+.clientmob {
+  box-sizing: border-box;
+  //display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  padding-top: 50px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  &__list:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+  &__list:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    //width: calc((100% - 30px * 5) / 6);
+    height: 90px;
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  &__list:last-child {
+    margin-right: 0px;
+  }
+
+  &__list--logo-link {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__list--logo-link:hover svg {
+    cursor: pointer;
+    fill: $accent-color;
+  }
+
+  &__list--logo-link:hover {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+  }
+  &__list--logo-one {
+    width: 44px;
+    height: 49px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list--logo-two {
+    width: 40px;
+    height: 52px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list--logo-three {
+    width: 41px;
+    height: 43px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list--logo-four {
+    width: 80px;
+    height: 42px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list--logo-five {
+    width: 59px;
+    height: 47px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list--logo-six {
+    width: 88px;
+    height: 45px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
