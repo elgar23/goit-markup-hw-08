@@ -1011,7 +1011,79 @@
       </div>
     </footer>-->
 
+    <!--modalmob-->
     <div class="backdrop is-hidden" data-modal>
+      <div class="modalmob">
+        <button type="button" class="modal__close-button" data-modal-close>
+          ✕
+        </button>
+
+        <div class="modal__content">
+          <p class="modalmob__title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <form action=""></form>
+          <form class="formmob">
+            <div class="form__field">
+              <label for="name" class="form--label">Имя</label>
+              <input type="text" name="name" id="name" class="formmob--input" />
+              <svg class="form__field--icon">
+                <use href="./form/sprite.svg#name"></use>
+              </svg>
+            </div>
+
+            <div class="form__field">
+              <label for="tel" class="form--label">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="formmob--input" />
+              <svg class="form__field--icon">
+                <use href="./form/sprite.svg#phone"></use>
+              </svg>
+            </div>
+
+            <div class="form__field">
+              <label for="email" class="form--label">Почта</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="formmob--input"
+              />
+              <svg class="form__field--icon">
+                <use href="./form/sprite.svg#email"></use>
+              </svg>
+            </div>
+
+            <div class="form__field">
+              <label for="comments" class="form--label">Комментарий</label>
+              <textarea
+                class="form--textarea"
+                name="comments"
+                id="comments"
+                cols="30"
+                ows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div class="formmob__field checkboxmob">
+              <label class="formmob--label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="formmob--link" href="">Условия договора</a>
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="formmob--input--checkboxmob"
+                />
+                <span class="check-boxmob"> </span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-buttonmob">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-button" data-modal-close>
           ✕
@@ -1075,7 +1147,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div>-->
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
   </body>

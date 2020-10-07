@@ -1,0 +1,150 @@
+.modalmob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
+  height: 609px;
+  background: $main-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom: 16px;
+    margin: 0;
+  }
+}
+.formmob {
+  background: $main-color;
+  border-radius: 4px;
+
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &--label {
+    margin-bottom: 4px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $text-color;
+    margin: auto;
+  }
+  &--input {
+    width: 370px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    padding-left: 42px;
+    outline: none;
+  }
+
+  &--input:focus {
+    border: 1px solid $accent-color;
+    border-width: 1px;
+    //transition-property: border;
+    outline: none;
+  }
+
+  &--input:focus + svg {
+    fill: $accent-color;
+    transition-property: fill;
+  }
+  &--input--checkboxmob {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+  }
+  &--input--checkboxmob:checked + .check-boxmob {
+    background-image: url(../modal/check.svg);
+    fill: $main-color;
+    background-color: $accent-color;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__field--icon {
+    position: absolute;
+    top: 29px;
+    left: 14px;
+    height: 18px;
+    width: 18px;
+  }
+  &--textarea {
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+  }
+
+  &--textarea::placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &--link {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+    display: inline-block;
+    line-height: 0.85;
+  }
+
+  &--textarea:focus {
+    border: 1px solid $accent-color;
+    border-width: 1px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+.submit-buttonmob {
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  border-radius: 4px;
+  border: none;
+  color: $main-color;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+.check-boxmob {
+  position: absolute;
+  background-image: url(../modal/Vector.svg);
+  width: 16px;
+  height: 15px;
+  left: 0;
+}

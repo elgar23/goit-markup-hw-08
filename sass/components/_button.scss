@@ -42,12 +42,27 @@ button {
   padding: 0;
   margin: 0;
   padding-bottom: 50px;
-  //display: flex;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
   }
-
+  &__item {
+    @media screen and (max-width: 767px) {
+      margin: 0 0 15px 0;
+    }
+  }
   &__item--button {
     color: $title-color;
     background-color: $background-color;
