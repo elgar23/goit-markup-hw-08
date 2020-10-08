@@ -18,6 +18,47 @@
   <body>
     <header class="header">
       <div class="container flexbox">
+        <a href="./index.html" class="nav__link-logo"
+          ><span class="nav__link-logo--webtext">Web</span
+          ><span class="nav__link-logo--text">Studio</span>
+        </a>
+        <nav class="nav">
+          <ul class="textnav">
+            <li class="nav-item">
+              <a href="./index.html" class="textnav--link--current">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="textnav--link">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="textnav--link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="links-header">
+          <li class="mail">
+            <a class="mail__link" href="mailto:info@devstudio.com">
+              <svg class="icon-mail">
+                <use href="./svg/xx/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="tel">
+            <a class="tel__link" href="tel:+380961111111">
+              <svg class="icon-tel">
+                <use href="./svg/xx/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- <header class="header">
+      <div class="container flexbox">
         <a href="./index.html" class="logo"
           ><span class="nav__link-logo--webtext">Web</span
           ><span class="nav__link-logo--text">Studio</span>
@@ -84,8 +125,9 @@
               >
             </li>
           </ul>
-        </div>
-        <!--<nav class="nav">
+        </div>-->
+
+    <!--  <nav class="nav">
           <a href="./index.html" class="nav__link-logo"
             ><span class="nav__link-logo--webtext">Web</span
             ><span class="nav__link-logo--text">Studio</span>
@@ -145,18 +187,18 @@
               </li>
             </ul>
           </div>
-          <ul class="list textnav">
-            <li class="nav-item">
-              <a href="./index.html" class="textnav--link--current">Студия</a>
-            </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="textnav--link">Портфолио</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="textnav--link">Контакты</a>
-            </li>
-          </ul>
         </nav>
+        <ul class="list textnav">
+          <li class="nav-item">
+            <a href="./index.html" class="textnav--link--current">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="textnav--link">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="textnav--link">Контакты</a>
+          </li>
+        </ul>
 
         <ul class="list links-header">
           <li class="mail">
@@ -175,9 +217,9 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>-->
+        </ul>
       </div>
-    </header>
+    </header>-->
 
     <main>
       <!-- Герой -->
@@ -208,7 +250,7 @@
 
       <!-- Особенности -->
 
-      <section class="featuresmob">
+      <!--<section class="featuresmob">
         <div class="container">
           <ul class="skillmob flexbox">
             <li class="skillmob__icon icon-antena">
@@ -241,9 +283,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <ul class="skill flexbox">
             <li class="skill__icon icon-antena">
@@ -276,7 +318,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <!-- Чем мы занимаемся -->
       <section class="our-work">
@@ -307,7 +349,7 @@
 
       <!-- Наша команда -->
 
-      <section class="our-teammob">
+      <!--<section class="our-teammob">
         <div class="container">
           <h2 class="our-teammob__title">Наша команда</h2>
           <ul class="our-teammob__list">
@@ -570,29 +612,42 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!--ourteam desktop-->
 
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__list--item">
               <picture>
-                <source srcset="
-                                  ./phototeam/img1mob.jpg    1x,
-                                  ./phototeam/img1mob@2x.jpg 2x
-                                " media="(min-width: 1200px)" />
-                <source srcset="
-                                  ./phototeam/img1tab.jpg    1x,
-                                  ./phototeam/img1tab@2x.jpg 2x
-                                " media="(min-width: 768px)" />
-                <source srcset="
-                                  ./phototeam/img1desk.jpg    1x,
-                                  ./phototeam/img1desk@2x.jpg 2x
-                                " media="(min-width: 480px)" />
-                <img class="member__photo" src="./phototeam/img1.jpg" alt="Фото Игорь Демьяненко" />
+                <source
+                  srcset="
+                    ./phototeam/img1mob.jpg    1x,
+                    ./phototeam/img1mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img1tab.jpg    1x,
+                    ./phototeam/img1tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img1desk.jpg    1x,
+                    ./phototeam/img1desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img1.jpg"
+                  alt="Фото Игорь Демьяненко"
+                />
               </picture>
               <h3 class="our-team__name">Игорь Демьяненко</h3>
               <p>Product Designer</p>
@@ -628,7 +683,34 @@
               </ul>
             </li>
             <li class="our-team__list--item">
-              <img src="./img/foto2.png" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img2mob.jpg    1x,
+                    ./phototeam/img2mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img2tab.jpg    1x,
+                    ./phototeam/img2tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img2desk.jpg    1x,
+                    ./phototeam/img2desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img2.jpg"
+                  alt="Фото Ольга Репина"
+                />
+              </picture>
               <h3 class="our-team__name">Ольга Репина</h3>
               <p>Frontend Developer</p>
               <ul class="social">
@@ -666,7 +748,34 @@
               </ul>
             </li>
             <li class="our-team__list--item">
-              <img src="./img/foto3.png" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img3mob.jpg    1x,
+                    ./phototeam/img3mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img3tab.jpg    1x,
+                    ./phototeam/img3tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img3desk.jpg    1x,
+                    ./phototeam/img3desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img3.jpg"
+                  alt="Фото Николай Тарасов"
+                />
+              </picture>
               <h3 class="our-team__name">Николай Тарасов</h3>
               <p>Marketing</p>
               <ul class="social">
@@ -704,7 +813,34 @@
               </ul>
             </li>
             <li class="our-team__list--item">
-              <img src="./img/foto4.png" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./phototeam/img4mob.jpg    1x,
+                    ./phototeam/img4mob@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img4tab.jpg    1x,
+                    ./phototeam/img4tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./phototeam/img4desk.jpg    1x,
+                    ./phototeam/img4desk@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="member__photo"
+                  src="./phototeam/img4.jpg"
+                  alt="Фото Михаил Ермаков"
+                />
+              </picture>
               <h3 class="our-team__name">Михаил Ермаков</h3>
               <p>UI Designer</p>
               <ul class="social">
@@ -743,7 +879,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <!-- Постоянные клиенты -->
       <div class="container">
@@ -799,59 +935,58 @@
         </ul>
       </div>
 
-      <!--<div class="container">
-          <h2 class="title-client">Постоянные клиенты</h2>
-          <ul class="client">
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-one">
-                  <use xlink:href=".\svg\sprite.svg#logo1"></use>
-                </svg>
-              </a>
-            </li>
+      <!-- <div class="container">
+        <h2 class="title-client">Постоянные клиенты</h2>
+        <ul class="client">
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-one">
+                <use xlink:href=".\svg\sprite.svg#logo1"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-two">
-                  <use xlink:href="./svg/sprite.svg#logo2"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-two">
+                <use xlink:href="./svg/sprite.svg#logo2"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-three">
-                  <use xlink:href="./svg/sprite.svg#logo3"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-three">
+                <use xlink:href="./svg/sprite.svg#logo3"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-four">
-                  <use xlink:href="./svg/sprite.svg#logo4"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-four">
+                <use xlink:href="./svg/sprite.svg#logo4"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-five">
-                  <use xlink:href="./svg/sprite.svg#logo5"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-five">
+                <use xlink:href="./svg/sprite.svg#logo5"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="client__list">
-              <a class="client__list--logo-link" href="">
-                <svg class="client__list--logo-six">
-                  <use xlink:href="./svg/sprite.svg#logo6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>-->
+          <li class="client__list">
+            <a class="client__list--logo-link" href="">
+              <svg class="client__list--logo-six">
+                <use xlink:href="./svg/sprite.svg#logo6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>-->
     </main>
     <!-- Контакты -->
     <!--contacsmob -->
@@ -916,6 +1051,8 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="container">
         <div class="footer-formmob">
           <p>Подпишитесь на рассылку</p>
           <form action="subscribe-form"></form>

@@ -20,16 +20,23 @@
   &__list:nth-child(-n + 4) {
     margin-bottom: 30px;
   }
-  &__list:nth-child(odd) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &__list:nth-child(odd) {
+      margin-right: 30px;
+    }
   }
 
   &__list {
-    margin: 0;
-
-    height: 90px;
-
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      height: 90px;
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      height: 90px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
   &__list:last-child {

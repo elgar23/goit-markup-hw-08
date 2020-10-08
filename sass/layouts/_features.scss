@@ -1,4 +1,7 @@
 .features {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
   margin-top: 94px;
 }
 .list {
@@ -10,14 +13,42 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__icon {
-    margin-right: 15px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px) / 2);
+      margin-right: 15px;
+    }
   }
+  @media screen and (min-width: 768px) {
+    &__icon:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__icon:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__icon:last-child {
     margin-right: 0;
   }
   &__title-text {
+    @media screen and (min-width: 768px) {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -30,6 +61,13 @@
     margin: 0;
   }
   &__paragraf {
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.7;
+
+      letter-spacing: 0.03em;
+    }
+
     font-size: 16px;
     line-height: 1.9;
 

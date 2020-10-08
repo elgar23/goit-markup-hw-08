@@ -1,4 +1,18 @@
 .links-header {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    list-style: none;
+    padding: 0 0 0 58px;
+    margin: 0;
+  }
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
   //display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -12,6 +26,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail__link {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
   padding-right: 30px;
   padding-top: 32px;
   //display: flex;
@@ -29,6 +46,9 @@
   }
 }
 .tel__link {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
   padding-top: 32px;
   //display: flex;
   align-items: center;

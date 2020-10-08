@@ -1,10 +1,20 @@
 .section-footermob {
-  padding-top: 64px;
-  padding-bottom: 56px;
-  background-color: $secondary-color;
+  @media screen and (max-width: 767px) {
+    padding-top: 64px;
+    padding-bottom: 56px;
+    background-color: $secondary-color;
+  }
+  @media screen and (min-width: 768px) {
+    background-color: $secondary-color;
+    padding-bottom: 60px;
+  }
 }
 
 .addressmob {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 46px;
+  }
   text-align: center;
 
   &__accent-text {
@@ -34,6 +44,12 @@
   }
 }
 .footermob {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 74px 0 61px;
+  }
+
   //display: flex;
   align-items: baseline;
 
@@ -61,13 +77,15 @@
   }
 }
 .joinmob {
-  color: $main-color;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    color: $main-color;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 60px;
+  }
 
   &__link {
     display: flex;
@@ -94,11 +112,21 @@
   }
 }
 .footermob-social {
+  @media screen and (max-width: 767px) {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
   list-style: none;
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
-  margin-bottom: 46px;
 }

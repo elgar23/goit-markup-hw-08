@@ -9,6 +9,10 @@
   color: $main-color;
 
   &__input {
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      margin-left: 20%;
+    }
     background-color: $secondary-color;
     padding-left: 16px;
     padding-right: 166px;
