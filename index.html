@@ -18,6 +18,80 @@
   <body>
     <header class="header">
       <div class="container flexbox">
+        <nav class="nav">
+          <a href="./index.html" class="nav__link-logo"
+            ><span class="nav__link-logo--webtext">Web</span
+            ><span class="nav__link-logo--text">Studio</span>
+          </a>
+          <button
+            type="button"
+            class="mobilebtn is-open"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                width="19"
+                height="19"
+                class="mobilebtn__close"
+                xlink:href="./mobileicon/sprite.svg#close_24px"
+              ></use>
+
+              <use
+                width="24"
+                height="16"
+                class="mobilebtn__menu"
+                xlink:href="./mobileicon/sprite.svg#menu_24px"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+            <ul class="mobile-text">
+              <li class="mobile-text__item">
+                <a href="./index.html" class="mobile-text__item--link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-text__item">
+                <a href="./portfolio.html" class="mobile-text__item--link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-text__item">
+                <a href="#" class="mobile-text__item--link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="icon-mail">
+                    <use href="./svg/xx/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="icon-tel">
+                    <use href="./svg/xx/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--<header class="header">
+      <div class="container flexbox">
         <a href="./index.html" class="nav__link-logo"
           ><span class="nav__link-logo--webtext">Web</span
           ><span class="nav__link-logo--text">Studio</span>
@@ -55,79 +129,10 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
 
-    <!-- <header class="header">
-      <div class="container flexbox">
-        <a href="./index.html" class="logo"
-          ><span class="nav__link-logo--webtext">Web</span
-          ><span class="nav__link-logo--text">Studio</span>
-        </a>
-        <button
-          type="button"
-          class="mobilebtn is-open"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-button
-        >
-          <svg
-            width="40px"
-            height="40px"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              width="19"
-              height="19"
-              class="mobilebtn__close"
-              xlink:href="./mobileicon/sprite.svg#close_24px"
-            ></use>
-
-            <use
-              width="24"
-              height="16"
-              class="mobilebtn__menu"
-              xlink:href="./mobileicon/sprite.svg#menu_24px"
-            ></use>
-          </svg>
-        </button>
-        <div class="mobile-menu is-open" id="mobile-menu" data-menu>
-          <ul class="list mobile-text">
-            <li class="mobile-text__item">
-              <a href="./index.html" class="mobile-text__item--link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="mobile-text__item">
-              <a href="./portfolio.html" class="mobile-text__item--link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="mobile-text__item">
-              <a href="#" class="mobile-text__item--link">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="list contacts">
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">
-                <svg class="icon-mail">
-                  <use href="./svg/xx/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111">
-                <svg class="icon-tel">
-                  <use href="./svg/xx/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>-->
-
-    <!--  <nav class="nav">
+    <!-- <header>
+        <nav class="nav">
           <a href="./index.html" class="nav__link-logo"
             ><span class="nav__link-logo--webtext">Web</span
             ><span class="nav__link-logo--text">Studio</span>
@@ -327,19 +332,54 @@
           <ul class="our-work__list flexbox">
             <div class="our-work__overlay">
               <li>
-                <img src="./img/img1.png" alt="" />
+                <picture>
+                  <source
+                    srcset="
+                      ./ourworkimg/img1.jpg    1x,
+                      ./ourworkimg/img1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./ourworkimg/img1.jpg"
+                    alt="Десктопные приложения"
+                  />
+                </picture>
               </li>
               <p class="our-work__text">Десктопные приложения</p>
             </div>
             <div class="our-work__overlay">
               <li>
-                <img src="./img/img2.png" alt="" />
+                <picture>
+                  <source
+                    srcset="
+                      ./ourworkimg/img2.jpg    1x,
+                      ./ourworkimg/img2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./ourworkimg/img2.jpg" alt="Мобильные приложения" />
+                </picture>
+
                 <p class="our-work__text">Мобильные приложения</p>
               </li>
             </div>
             <div class="our-work__overlay">
               <li>
-                <img src="./img/img3.png" alt="" />
+                <picture>
+                  <source
+                    srcset="
+                      ./ourworkimg/img3.jpg    1x,
+                      ./ourworkimg/img3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./ourworkimg/img3.jpg" alt="Дизайнерские решения" />
+                </picture>
+
                 <p class="our-work__text">Дизайнерские решения</p>
               </li>
             </div>
@@ -619,265 +659,303 @@
       <section class="our-team">
         <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
-          <ul class="our-team__list">
-            <li class="our-team__list--item">
-              <picture>
-                <source
-                  srcset="
-                    ./phototeam/img1mob.jpg    1x,
-                    ./phototeam/img1mob@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img1tab.jpg    1x,
-                    ./phototeam/img1tab@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img1desk.jpg    1x,
-                    ./phototeam/img1desk@2x.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  class="member__photo"
-                  src="./phototeam/img1.jpg"
-                  alt="Фото Игорь Демьяненко"
-                />
-              </picture>
-              <h3 class="our-team__name">Игорь Демьяненко</h3>
-              <p>Product Designer</p>
-              <ul class="social">
-                <li class="social__list">
-                  <a class="social__link" href="https://www.instagram.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://twitter.com/home">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.facebook.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.linkedin.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team__list--item">
-              <picture>
-                <source
-                  srcset="
-                    ./phototeam/img2mob.jpg    1x,
-                    ./phototeam/img2mob@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img2tab.jpg    1x,
-                    ./phototeam/img2tab@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img2desk.jpg    1x,
-                    ./phototeam/img2desk@2x.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  class="member__photo"
-                  src="./phototeam/img2.jpg"
-                  alt="Фото Ольга Репина"
-                />
-              </picture>
-              <h3 class="our-team__name">Ольга Репина</h3>
-              <p>Frontend Developer</p>
-              <ul class="social">
-                <li class="social__list">
-                  <a
-                    class="social__link flex"
-                    href="https://www.instagram.com/"
-                  >
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://twitter.com/home">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.facebook.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.linkedin.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team__list--item">
-              <picture>
-                <source
-                  srcset="
-                    ./phototeam/img3mob.jpg    1x,
-                    ./phototeam/img3mob@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img3tab.jpg    1x,
-                    ./phototeam/img3tab@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img3desk.jpg    1x,
-                    ./phototeam/img3desk@2x.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  class="member__photo"
-                  src="./phototeam/img3.jpg"
-                  alt="Фото Николай Тарасов"
-                />
-              </picture>
-              <h3 class="our-team__name">Николай Тарасов</h3>
-              <p>Marketing</p>
-              <ul class="social">
-                <li class="social__list">
-                  <a
-                    class="social__link flex"
-                    href="https://www.instagram.com/"
-                  >
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://twitter.com/home">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.facebook.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.linkedin.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team__list--item">
-              <picture>
-                <source
-                  srcset="
-                    ./phototeam/img4mob.jpg    1x,
-                    ./phototeam/img4mob@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img4tab.jpg    1x,
-                    ./phototeam/img4tab@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./phototeam/img4desk.jpg    1x,
-                    ./phototeam/img4desk@2x.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  class="member__photo"
-                  src="./phototeam/img4.jpg"
-                  alt="Фото Михаил Ермаков"
-                />
-              </picture>
-              <h3 class="our-team__name">Михаил Ермаков</h3>
-              <p>UI Designer</p>
-              <ul class="social">
-                <li class="social__list">
-                  <a
-                    class="social__link flex"
-                    href="https://www.instagram.com/"
-                  >
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://twitter.com/home">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.facebook.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__list">
-                  <a class="social__link flex" href="https://www.linkedin.com/">
-                    <svg class="icon">
-                      <use href="./svg/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div>
+            <ul class="our-team__list">
+              <li class="our-team__list--item">
+                <picture>
+                  <source
+                    srcset="
+                      ./phototeam/img1mob.jpg    1x,
+                      ./phototeam/img1mob@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img1tab.jpg    1x,
+                      ./phototeam/img1tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img1desk.jpg    1x,
+                      ./phototeam/img1desk@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="member__photo"
+                    src="./phototeam/img1.jpg"
+                    alt="Фото Игорь Демьяненко"
+                  />
+                </picture>
+                <h3 class="our-team__name">Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+                <ul class="social">
+                  <li class="social__list">
+                    <a class="social__link" href="https://www.instagram.com/">
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://twitter.com/home"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.facebook.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="our-team__list--item">
+                <picture>
+                  <source
+                    srcset="
+                      ./phototeam/img2mob.jpg    1x,
+                      ./phototeam/img2mob@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img2tab.jpg    1x,
+                      ./phototeam/img2tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img2desk.jpg    1x,
+                      ./phototeam/img2desk@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="member__photo"
+                    src="./phototeam/img2.jpg"
+                    alt="Фото Ольга Репина"
+                  />
+                </picture>
+                <h3 class="our-team__name">Ольга Репина</h3>
+                <p>Frontend Developer</p>
+                <ul class="social">
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://twitter.com/home"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.facebook.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="our-team__list--item">
+                <picture>
+                  <source
+                    srcset="
+                      ./phototeam/img3mob.jpg    1x,
+                      ./phototeam/img3mob@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img3tab.jpg    1x,
+                      ./phototeam/img3tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img3desk.jpg    1x,
+                      ./phototeam/img3desk@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="member__photo"
+                    src="./phototeam/img3.jpg"
+                    alt="Фото Николай Тарасов"
+                  />
+                </picture>
+                <h3 class="our-team__name">Николай Тарасов</h3>
+                <p>Marketing</p>
+                <ul class="social">
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://twitter.com/home"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.facebook.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="our-team__list--item">
+                <picture>
+                  <source
+                    srcset="
+                      ./phototeam/img4mob.jpg    1x,
+                      ./phototeam/img4mob@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img4tab.jpg    1x,
+                      ./phototeam/img4tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./phototeam/img4desk.jpg    1x,
+                      ./phototeam/img4desk@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="member__photo"
+                    src="./phototeam/img4.jpg"
+                    alt="Фото Михаил Ермаков"
+                  />
+                </picture>
+                <h3 class="our-team__name">Михаил Ермаков</h3>
+                <p>UI Designer</p>
+                <ul class="social">
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://twitter.com/home"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.facebook.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a
+                      class="social__link flex"
+                      href="https://www.linkedin.com/"
+                    >
+                      <svg class="icon">
+                        <use href="./svg/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -1023,28 +1101,28 @@
           <ul class="footermob-social">
             <li class="social__list">
               <a class="joinmob__link" href="https://www.instagram.com/">
-                <svg class="icon">
+                <svg class="icon" width="20px" height="20px">
                   <use href="./svg/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://twitter.com/home">
-                <svg class="icon">
+                <svg class="icon" width="20px" height="20px">
                   <use href="./svg/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://www.facebook.com/">
-                <svg class="icon">
+                <svg class="icon" width="20px" height="20px">
                   <use href="./svg/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://www.linkedin.com/">
-                <svg class="icon">
+                <svg class="icon" width="20px" height="20px">
                   <use href="./svg/sprite.svg#linkedin"></use>
                 </svg>
               </a>
