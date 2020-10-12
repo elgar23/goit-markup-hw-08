@@ -2,9 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-.flexbox {
-  //display: flex;
-}
 body {
   color: $text-color;
   background-color: $main-color;
@@ -18,9 +15,11 @@ a {
 h5 {
   margin: 0;
 }
-
+.flex {
+  display: flex;
+}
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;

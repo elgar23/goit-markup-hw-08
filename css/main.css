@@ -17,8 +17,12 @@ h5 {
   margin: 0;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -1462,8 +1466,8 @@ input::placeholder {
 }
 
 .nav__link-logo {
-  padding-top: 24px;
-  padding-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav__link-logo--webtext {
@@ -1515,7 +1519,6 @@ input::placeholder {
     letter-spacing: 0.03em;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
-    padding-top: 16px;
   }
 }
 
@@ -1595,7 +1598,7 @@ input::placeholder {
   .mobile-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 453px;
@@ -1869,7 +1872,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .prtflheader {
     position: relative;
     right: 0;
@@ -1896,7 +1899,7 @@ input::placeholder {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgmobhero/heromob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/imgmobhero/heromob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1912,7 +1915,7 @@ input::placeholder {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgmobhero/herodesk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/imgmobhero/herodesk.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2352,7 +2355,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-formmob {
     font-weight: bold;
     font-size: 14px;
@@ -2411,7 +2414,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-formmob__input {
     background-color: #2f303a;
     padding-left: 16px;
@@ -2505,7 +2508,8 @@ input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 750ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -2554,7 +2558,7 @@ input::placeholder {
 }
 
 .formmob--input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -2583,7 +2587,7 @@ input::placeholder {
 }
 
 .formmob--input--checkboxmob:checked + .check-boxmob {
-  background-image: url(../modal/check.svg);
+  background-image: url(../img/modal/check.svg);
   fill: #ffffff;
   background-color: #2196f3;
   transition-property: background-color, fill;
@@ -2651,7 +2655,7 @@ input::placeholder {
 
 .check-boxmob {
   position: absolute;
-  background-image: url(../modal/Vector.svg);
+  background-image: url(../img/modal/Vector.svg);
   width: 16px;
   height: 15px;
   left: 0;

@@ -17,8 +17,8 @@
 
   <body>
     <header class="header">
-      <div class="container flexbox">
-        <nav class="nav">
+      <div class="container">
+        <div class="flex">
           <a href="./index.html" class="nav__link-logo"
             ><span class="nav__link-logo--webtext">Web</span
             ><span class="nav__link-logo--text">Studio</span>
@@ -39,54 +39,59 @@
                 width="19"
                 height="19"
                 class="mobilebtn__close"
-                xlink:href="./mobileicon/sprite.svg#close_24px"
+                xlink:href="img/mobileicon/sprite.svg#close_24px"
               ></use>
 
               <use
                 width="24"
                 height="16"
                 class="mobilebtn__menu"
-                xlink:href="./mobileicon/sprite.svg#menu_24px"
+                xlink:href="img/mobileicon/sprite.svg#menu_24px"
               ></use>
             </svg>
           </button>
-          <div class="mobile-menu is-open" id="mobile-menu" data-menu>
-            <ul class="mobile-text">
-              <li class="mobile-text__item">
-                <a href="./index.html" class="mobile-text__item--link--current"
-                  >Студия</a
-                >
-              </li>
-              <li class="mobile-text__item">
-                <a href="./portfolio.html" class="mobile-text__item--link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="mobile-text__item">
-                <a href="#" class="mobile-text__item--link">Контакты</a>
-              </li>
-            </ul>
 
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="icon-mail">
-                    <use href="./svg/xx/sprite.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
-                  <svg class="icon-tel">
-                    <use href="./svg/xx/sprite.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+          <nav class="nav">
+            <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+              <ul class="mobile-text">
+                <li class="mobile-text__item">
+                  <a
+                    href="./index.html"
+                    class="mobile-text__item--link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-text__item">
+                  <a href="./portfolio.html" class="mobile-text__item--link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-text__item">
+                  <a href="#" class="mobile-text__item--link">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="icon-mail">
+                      <use href="./img/svg/xx/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="icon-tel">
+                      <use href="./img/svg/xx/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -150,14 +155,14 @@
                 <picture>
                   <source
                     srcset="
-                      ./ourworkimg/img1.jpg    1x,
-                      ./ourworkimg/img1@2x.jpg 2x
+                      ./img/ourworkimg/img1.jpg    1x,
+                      ./img/ourworkimg/img1@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
 
                   <img
-                    src="./ourworkimg/img1.jpg"
+                    src="./img/ourworkimg/img1.jpg"
                     alt="Десктопные приложения"
                   />
                 </picture>
@@ -169,13 +174,16 @@
                 <picture>
                   <source
                     srcset="
-                      ./ourworkimg/img2.jpg    1x,
-                      ./ourworkimg/img2@2x.jpg 2x
+                      ./img/ourworkimg/img2.jpg    1x,
+                      ./img/ourworkimg/img2@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
 
-                  <img src="./ourworkimg/img2.jpg" alt="Мобильные приложения" />
+                  <img
+                    src="./img/ourworkimg/img2.jpg"
+                    alt="Мобильные приложения"
+                  />
                 </picture>
 
                 <p class="our-work__text">Мобильные приложения</p>
@@ -186,13 +194,16 @@
                 <picture>
                   <source
                     srcset="
-                      ./ourworkimg/img3.jpg    1x,
-                      ./ourworkimg/img3@2x.jpg 2x
+                      ./img/ourworkimg/img3.jpg    1x,
+                      ./img/ourworkimg/img3@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
 
-                  <img src="./ourworkimg/img3.jpg" alt="Дизайнерские решения" />
+                  <img
+                    src="./img/ourworkimg/img3.jpg"
+                    alt="Дизайнерские решения"
+                  />
                 </picture>
 
                 <p class="our-work__text">Дизайнерские решения</p>
@@ -213,28 +224,28 @@
                 <picture>
                   <source
                     srcset="
-                      ./phototeam/img1mob.jpg    1x,
-                      ./phototeam/img1mob@2x.jpg 2x
+                      ./img/phototeam/img1mob.jpg    1x,
+                      ./img/phototeam/img1mob@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img1tab.jpg    1x,
-                      ./phototeam/img1tab@2x.jpg 2x
+                      ./img/phototeam/img1tab.jpg    1x,
+                      ./img/phototeam/img1tab@2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img1desk.jpg    1x,
-                      ./phototeam/img1desk@2x.jpg 2x
+                      ./img/phototeam/img1desk.jpg    1x,
+                      ./img/phototeam/img1desk@2x.jpg 2x
                     "
                     media="(min-width: 480px)"
                   />
                   <img
                     class="member__photo"
-                    src="./phototeam/img1.jpg"
+                    src="./img/phototeam/img1.jpg"
                     alt="Фото Игорь Демьяненко"
                   />
                 </picture>
@@ -244,7 +255,7 @@
                   <li class="social__list">
                     <a class="social__link" href="https://www.instagram.com/">
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#instagram"></use>
+                        <use href="./img/svg/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -254,7 +265,7 @@
                       href="https://twitter.com/home"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#twitter"></use>
+                        <use href="./img/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -264,7 +275,7 @@
                       href="https://www.facebook.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#facebook"></use>
+                        <use href="./img/svg/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -274,7 +285,7 @@
                       href="https://www.linkedin.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#linkedin"></use>
+                        <use href="./img/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -284,28 +295,28 @@
                 <picture>
                   <source
                     srcset="
-                      ./phototeam/img2mob.jpg    1x,
-                      ./phototeam/img2mob@2x.jpg 2x
+                      ./img/phototeam/img2mob.jpg    1x,
+                      ./img/phototeam/img2mob@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img2tab.jpg    1x,
-                      ./phototeam/img2tab@2x.jpg 2x
+                      ./img/phototeam/img2tab.jpg    1x,
+                      ./img/phototeam/img2tab@2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img2desk.jpg    1x,
-                      ./phototeam/img2desk@2x.jpg 2x
+                      ./img/phototeam/img2desk.jpg    1x,
+                      ./img/phototeam/img2desk@2x.jpg 2x
                     "
                     media="(min-width: 480px)"
                   />
                   <img
                     class="member__photo"
-                    src="./phototeam/img2.jpg"
+                    src="./img/phototeam/img2.jpg"
                     alt="Фото Ольга Репина"
                   />
                 </picture>
@@ -318,7 +329,7 @@
                       href="https://www.instagram.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#instagram"></use>
+                        <use href="./img/svg/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -328,7 +339,7 @@
                       href="https://twitter.com/home"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#twitter"></use>
+                        <use href="./img/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -338,7 +349,7 @@
                       href="https://www.facebook.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#facebook"></use>
+                        <use href="./img/svg/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -348,7 +359,7 @@
                       href="https://www.linkedin.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#linkedin"></use>
+                        <use href="./img/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -358,28 +369,28 @@
                 <picture>
                   <source
                     srcset="
-                      ./phototeam/img3mob.jpg    1x,
-                      ./phototeam/img3mob@2x.jpg 2x
+                      ./img/phototeam/img3mob.jpg    1x,
+                      ./img/phototeam/img3mob@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img3tab.jpg    1x,
-                      ./phototeam/img3tab@2x.jpg 2x
+                      ./img/phototeam/img3tab.jpg    1x,
+                      ./img/phototeam/img3tab@2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img3desk.jpg    1x,
-                      ./phototeam/img3desk@2x.jpg 2x
+                      ./img/phototeam/img3desk.jpg    1x,
+                      ./img/phototeam/img3desk@2x.jpg 2x
                     "
                     media="(min-width: 480px)"
                   />
                   <img
                     class="member__photo"
-                    src="./phototeam/img3.jpg"
+                    src="./img/phototeam/img3.jpg"
                     alt="Фото Николай Тарасов"
                   />
                 </picture>
@@ -392,7 +403,7 @@
                       href="https://www.instagram.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#instagram"></use>
+                        <use href="./img/svg/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -402,7 +413,7 @@
                       href="https://twitter.com/home"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#twitter"></use>
+                        <use href="./img/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -412,7 +423,7 @@
                       href="https://www.facebook.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#facebook"></use>
+                        <use href="./img/svg/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -422,7 +433,7 @@
                       href="https://www.linkedin.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#linkedin"></use>
+                        <use href="./img/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -432,28 +443,28 @@
                 <picture>
                   <source
                     srcset="
-                      ./phototeam/img4mob.jpg    1x,
-                      ./phototeam/img4mob@2x.jpg 2x
+                      ./img/phototeam/img4mob.jpg    1x,
+                      ./img/phototeam/img4mob@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img4tab.jpg    1x,
-                      ./phototeam/img4tab@2x.jpg 2x
+                      ./img/phototeam/img4tab.jpg    1x,
+                      ./img/phototeam/img4tab@2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./phototeam/img4desk.jpg    1x,
-                      ./phototeam/img4desk@2x.jpg 2x
+                      ./img/phototeam/img4desk.jpg    1x,
+                      ./img/phototeam/img4desk@2x.jpg 2x
                     "
                     media="(min-width: 480px)"
                   />
                   <img
                     class="member__photo"
-                    src="./phototeam/img4.jpg"
+                    src="./img/phototeam/img4.jpg"
                     alt="Фото Михаил Ермаков"
                   />
                 </picture>
@@ -466,7 +477,7 @@
                       href="https://www.instagram.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#instagram"></use>
+                        <use href="./img/svg/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -476,7 +487,7 @@
                       href="https://twitter.com/home"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#twitter"></use>
+                        <use href="./img/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -486,7 +497,7 @@
                       href="https://www.facebook.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#facebook"></use>
+                        <use href="./img/svg/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -496,7 +507,7 @@
                       href="https://www.linkedin.com/"
                     >
                       <svg class="icon">
-                        <use href="./svg/sprite.svg#linkedin"></use>
+                        <use href="./img/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -514,7 +525,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-one">
-                <use xlink:href=".\svg\sprite.svg#logo1"></use>
+                <use xlink:href="./img\svg\sprite.svg#logo1"></use>
               </svg>
             </a>
           </li>
@@ -522,7 +533,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-two">
-                <use xlink:href="./svg/sprite.svg#logo2"></use>
+                <use xlink:href="./img/svg/sprite.svg#logo2"></use>
               </svg>
             </a>
           </li>
@@ -530,7 +541,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-three">
-                <use xlink:href="./svg/sprite.svg#logo3"></use>
+                <use xlink:href="./img/svg/sprite.svg#logo3"></use>
               </svg>
             </a>
           </li>
@@ -538,7 +549,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-four">
-                <use xlink:href="./svg/sprite.svg#logo4"></use>
+                <use xlink:href="./img/svg/sprite.svg#logo4"></use>
               </svg>
             </a>
           </li>
@@ -546,7 +557,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-five">
-                <use xlink:href="./svg/sprite.svg#logo5"></use>
+                <use xlink:href="./img/svg/sprite.svg#logo5"></use>
               </svg>
             </a>
           </li>
@@ -554,7 +565,7 @@
           <li class="clientmob__list">
             <a class="clientmob__list--logo-link" href="">
               <svg class="clientmob__list--logo-six">
-                <use xlink:href="./svg/sprite.svg#logo6"></use>
+                <use xlink:href="./img/svg/sprite.svg#logo6"></use>
               </svg>
             </a>
           </li>
@@ -596,28 +607,28 @@
             <li class="social__list">
               <a class="joinmob__link" href="https://www.instagram.com/">
                 <svg class="icon" width="20px" height="20px">
-                  <use href="./svg/sprite.svg#instagram"></use>
+                  <use href="./img/svg/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://twitter.com/home">
                 <svg class="icon" width="20px" height="20px">
-                  <use href="./svg/sprite.svg#twitter"></use>
+                  <use href="./img/svg/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://www.facebook.com/">
                 <svg class="icon" width="20px" height="20px">
-                  <use href="./svg/sprite.svg#facebook"></use>
+                  <use href="./img/svg/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list">
               <a class="joinmob__link" href="https://www.linkedin.com/">
                 <svg class="icon" width="20px" height="20px">
-                  <use href="./svg/sprite.svg#linkedin"></use>
+                  <use href="./img/svg/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -637,7 +648,7 @@
           <button class="footer-formmob__btn">
             Подписаться
             <svg class="footer-formmob--icon">
-              <use xlink:href="./form/sprite.svg#send"></use>
+              <use xlink:href="./img/form/sprite.svg#send"></use>
             </svg>
           </button>
         </div>
@@ -659,7 +670,7 @@
               <label for="name" class="form--label">Имя</label>
               <input type="text" name="name" id="name" class="formmob--input" />
               <svg class="form__field--icon">
-                <use href="./form/sprite.svg#name"></use>
+                <use href="./img/form/sprite.svg#name"></use>
               </svg>
             </div>
 
@@ -667,7 +678,7 @@
               <label for="tel" class="form--label">Телефон</label>
               <input type="tel" name="tel" id="tel" class="formmob--input" />
               <svg class="form__field--icon">
-                <use href="./form/sprite.svg#phone"></use>
+                <use href="./img/form/sprite.svg#phone"></use>
               </svg>
             </div>
 
@@ -680,7 +691,7 @@
                 class="formmob--input"
               />
               <svg class="form__field--icon">
-                <use href="./form/sprite.svg#email"></use>
+                <use href="./img/form/sprite.svg#email"></use>
               </svg>
             </div>
 
